@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <script src="script.js"></script>
+    <style>
+       h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       #container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .form{
+        margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+    
+    </style>
+</head>
+<body>
+    <h1>IMC em JS</h1>
+    <hr>
+    <div id="container">
+        <div class="foto" >
+            <img src="peso2.png" alt="" srcset="">
+        </div>
+        <form class="form" onsubmit="imc()">
+            <label for="peso">Peso</label>
+            <input type="text" id="peso" placeholder="Digite seu peso em kg">
+            <label for="altura">Altura</label>
+            <input type="text" id="altura" placeholder="Digite sua altura em metros ex: 1.0">
+            <button type="submit">Calcular</button>
+            <div id="resultado"></div>
+        </form>
+    </div>
+    
+</body>
+</html>
