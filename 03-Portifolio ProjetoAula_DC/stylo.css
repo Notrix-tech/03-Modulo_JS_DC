@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+body{
+    background-color:white;
+    padding-bottom: 200px;
+    transition-duration: 0.2s;
+}
+body.ligth{
+    background-color: burlywood;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 70px;
+    border-bottom: 1px solid #8257E6;
+    color: black;
+}
+header.ligth{
+    color:#888 ;
+}
+#apresentacao{
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+#apresentacao .item{
+    width: 50%;
+}
+#apresentacao .item:first-child{
+    padding-left: 70px;
+}
+#apresentacao .item:last-child{
+    padding-right: 70px;
+    display: flex;
+    justify-content: flex-end;
+}
+#apresentacao .item h1{
+    color: white;
+    font-size: 4.2rem;
+}
+#apresentacao .item span{
+    color: #8257E6;
+    display: block;
+}
+#apresentacao .item p{
+    color: #888;
+    font-size: 20px;
+}
+#apresentacao .item a{
+    display: inline-block;
+    color: white;
+    background-color: #8257E6;
+    margin-top: 26px;
+    margin-right: 16px;
+    line-height: 40px;
+    padding: 0 26px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+#sobremim h1{
+    color: black;
+    text-align: center;
+    font-size: 36px;
+    margin: 26px;
+
+}
+#sobremim p{
+    color: black;
+    text-align: center;
+    padding: 0 20%;
+    line-height: 30px;
+
+}
+#habilidades h1{
+    color: black;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 150px;
+}
+#habilidades ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#habilidades ul li{
+    background-color:white;
+    margin: auto 25px;
+    padding: 30px 40px;
+    border-top-left-radius: 25px;
+    border-bottom: 4px solid blueviolet;
+    transition-duration:0.2s;
+
+
+}
+#habilidades ul li:hover{
+    transform: scale(1.1, 1.1);
+    
+}
+
+#habilidades ul li span{
+    display: block;
+    text-align: center;
+    color:black;
+    margin-bottom: 30px;
+}
+
+
