@@ -17,6 +17,12 @@
         justify-content: center;
         align-items: center;
        }
+       .foto{
+        border: 1px solid red;
+       }
+       .dados{
+        border: 1px solid red;
+       }
        .form{
         margin-left: 70px;
         display: flex;
@@ -33,14 +39,17 @@
         <div class="foto" >
             <img src="peso2.png" alt="" srcset="">
         </div>
-        <form class="form" onsubmit="imc()">
-            <label for="peso">Peso</label>
-            <input type="text" id="peso" placeholder="Digite seu peso em kg">
-            <label for="altura">Altura</label>
-            <input type="text" id="altura" placeholder="Digite sua altura em metros ex: 1.0">
-            <button type="submit">Calcular</button>
-            <div id="resultado"></div>
-        </form>
+        <div class="dados">
+            <form class="form" onsubmit="imc()">
+                <label for="peso">Peso</label>
+                <input type="text" id="peso" placeholder="Digite seu peso em kg">
+                <label for="altura">Altura</label>
+                <input type="text" id="altura" placeholder="Digite sua altura em metros ex: 1.0">
+                <button type="submit">Calcular</button>
+                <div id="resultado"></div>
+            </form>
+        </div>
+        
     </div>
     
 </body>
