@@ -23,9 +23,16 @@
             align-items: center;
 
         }
+        header{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+        }
         form{
-            width: 600px;
-            padding: 16px;
+            width: 700px;
+            height: 180px;
+            padding: 10px;
             background-color: #ffffff;
             border-radius: 5px;
             box-shadow: 0px 5px 15px;
@@ -76,27 +83,49 @@
         }
         #resultado img{
             width: 100%;
+            height: 100%;
         }
+        #Faixa_Etaria{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .cabecalho h1{
+           margin:20px;
+           padding: 16px;
+           display: flex;
+           justify-content: center;
+           
+           
+        }
+
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Checar Idade</h1>
-        <hr>
-    </header>
-         <form onsubmit="checkIdade()">
-            <div class="container">
-                <label for="idade">Idade</label>
-                <input type="text" id="idade">
-                <button type="submit">Checar</button>
-            </div>
-        <div id="resultado">
-            <img src="" alt="" srcset="(max-width: 600px) 480px,
-               800px" id="imagem">
+    <div>
+        <div class="cabecalho">
+            <h1>Verificar estatus da Idade</h1>
+            
         </div>
-
-    </form>
+             <form onsubmit="checkIdade()">
+                <div class="container">
+                    <label for="idade">Idade</label>
+                    <input type="text" id="idade">
+                    <button type="submit">Checar</button>
+                </div>
+            <div id="resultado">
+                <img src="" alt="" srcset="" id="imagem">
+            </div>
+            <div id="Faixa_Etaria">
+                
+            </div>
+    
+        </form>
+    </div>
+   
 
 
 </body>
