@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            
+            width: 70%;
+            
+            gap: 16px;
+        }
+        label{
+
+        }
+        input, textarea{
+            padding: 20px;
+        }
+        button{
+            padding: 16px;
+            margin-top: 16px;
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+<body>
+    <label for="texto">Conta Palavra</label>
+    <textarea id="texto"></textarea>
+    <label for="busca">Buscar</label>
+    <input type="text" id="busca" placeholder="Procurar por:"/>
+    <button onclick="ContaPalavras()">Contar</button>
+</body>
+</html>
