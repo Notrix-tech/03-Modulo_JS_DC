@@ -1,1 +1,7 @@
 var label
+
+if((ano % 4 == 0)) && (ano % 100 == 0) && (ano % 400 == 0)){
+    gerarDias(29);
+    return;
+}
+gerarDias(28)
