@@ -4,7 +4,7 @@ que escreva na tela as boas vindas ao novo colega;
  */
 function boasVindas(){
     
-    const resultado = document.getElementById("resultado").innerHTML= "Seja Bem-vindo a turma fs09/fs10";
+    const resultado = document.getElementById("resultado").innerHTML= "Seja Bem-vindo à turma Fs09/Fs10";
     
 }
 const btn = document.querySelector("#send")
