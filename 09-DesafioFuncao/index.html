@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExercioFuncao</title>
+    <script src="./TelaBoasVindas.js"></script>
+    <style>
+        main {
+            display: block
+        }
+
+        header {
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+
+        button {
+            display: block;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(152, 149, 149);
+            color: #fff;
+            font-size: 1.rem;
+            cursor: pointer;
+            width: 20%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #resultado {
+            padding: 50px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Turma Full Stack Digital College></h1>
+        </header>
+        <div id="form">
+            <p>Você é aluno novo na Turma. Então clique no botao a baixo</p>
+            <label for="novoAluno">Nome:</label>
+            <input type="text" name="name" id="novoAluno">
+            
+            <label for="idade">Digite seu ano de nascimento</label>
+            <input type="number" name="idade" id="ano" >
+
+            <label for="message">Deixe-nos uma mensagem</label>
+            <textarea name="message" id="mensage" ></textarea>
+
+            <button id="btn" onclick="boasVindas()">Clique Aqui</button>
+            <div onclick="boasVindas(), subtIdade()" id="resultado">
+
+            </div>
+        </div>
+    </main>
+
+</html>
