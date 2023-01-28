@@ -1,7 +1,7 @@
 //
-let manha = 0
-let tarde = 0
-let noite = 0
+let manha = 0;
+let tarde = 0;
+let noite = 0;
 function checarHorario(hora){
     if(hora >= "05:00" && hora <= "11:59"){
         manha++
