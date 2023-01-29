@@ -1,0 +1,5 @@
+# Erros
+"Uncaught SyntaxError: Unexpected token '<'" é um erro de sintaxe JavaScript que indica que o navegador encontrou um caractere inesperado "<" na sua página. Isso geralmente ocorre quando o código JavaScript é carregado antes de o HTML ser carregado completamente, ou quando o código JavaScript contém caracteres inválidos ou codificação incorreta.
+Verifique se você não está carregando um arquivo HTML como se fosse um arquivo JavaScript.
+Verifique se você não está carregando um arquivo javascript quebrado ou com algum erro de sintaxe.
+Verifique se você não está usando alguma biblioteca ou código externo que possa estar causando conflito com o seu código.
