@@ -1,0 +1,36 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+h1{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+#mensagem{
+    font-size: 24px;
+    margin-bottom: 50px;
+
+}
+input[type="text"]{
+    font-size:18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}   
+button{
+    font-size: 18px;
+    padding:10px 20px;
+    background-color: rgb(72, 18, 209);
+    
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: red;
+}
+#tentativas-restantes{
+    font-size: 24px;
+    margin-top: 50px;
+}
