@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    color: white;
+}
+.btn{
+    
+    height: 90px;
+    padding: 0 60px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* animation: piscando linear infinite .5s; */
+    animation: arrudeio linear infinite 4s;
+}
+/* .btn:hover{
+    background-color: blue;
+    color: brown;
+} */
+/* Animação de uma etapa*/
+/* @keyframes piscando {
+    from{}
+    to{
+        background-color: red;
+        color: brown;
+        transform: scale(1.1, 1.1) translateX(45%) translateY(45%);
+    }
+} */
+
+@keyframes arrudeio {
+    0%{
+        left: 0%;
+        top: 0%;
+    }
+    25%{
+        left: calc(100% - 150px);
+        top: 0%;
+    }
+    50%{
+        left: calc(100% - 150px);
+        top: 1calc(100% - 50px);;
+    }
+    75%{
+        left : 0%;
+        top : calc(100% - 150px);
+    }
+    100%{
+        left: 0%;
+        top: 0%;
+    }
+    
+}
