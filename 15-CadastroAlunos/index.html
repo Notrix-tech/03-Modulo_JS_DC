@@ -15,7 +15,14 @@
         <div class="col-12">
             <h2 class="mb-3 d-flex justify-content-between">
                 Lista de Alunos
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Inserir Aluno</button>
+                <button class="btn btn-primary" 
+                type="button"
+                 data-bs-toggle="offcanvas" 
+                 data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                  >
+                  Inserir Aluno
+                </button>
             </h2>
             <table class="table">
                 <thead class="table-dark">
@@ -37,10 +44,16 @@
 <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasRightLabel">Cadastrar</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button 
+        type="button" 
+        class="btn-close" 
+        data-bs-dismiss="offcanvas" 
+        aria-label="Close">
+      </button>
     </div>
     <div class="offcanvas-body">
-        <form onsubmit="adicionarAluno()">
+        <form id="cadastro" onsubmit="adicionarAluno()">
+
             <label class="form-label" for="nome">Nome:</label>
             <input class="form-control" type="text" id="name" required placeholder="Digite seu nome"/>
 
@@ -57,6 +70,36 @@
         </form>
     </div>
   </div>
+
+  <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight_editar" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Editar</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <form id="editar" onsubmit=" editarAluno()">
+            <input type="hidden" id="e_id">
+
+            <label class="form-label" for="e_nome">Nome:</label>
+            <input class="form-control" type="text" id="e_name" required placeholder="Digite seu nome"/>
+
+            <label class="form-label mt-2" for="e_email">Email:</label>
+            <input class="form-control" type="email" id="e_email" required placeholder="Digite seu Email"/>
+
+            <label class="form-label mt-2" for="e_telefone">Telefone:</label>
+            <input class="form-control" type="tel" id="e_telefone" required placeholder="(00)90000-0000"/>
+
+            <label class="form-label" for="e_cidade">Cidade:</label>
+            <input class="form-control mt-2" type="text" id="e_cidade" required placeholder="Digite sua Cidade"/>
+
+            <button class="btn btn-primary mt-3 w-100" type="submit">Enviar</button>
+        </form>
+    </div>
+  </div>
+
+  
+
+  
   <!--JS bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
