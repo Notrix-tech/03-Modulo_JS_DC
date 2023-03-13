@@ -44,7 +44,8 @@
 </div>
 <div 
 class="offcanvas offcanvas-end " 
-tabindex="-1" id="offcanvasRight"
+tabindex="-1" 
+id="offcanvasRight"
  aria-labelledby="offcanvasRightLabel"
  >
 
@@ -62,13 +63,13 @@ tabindex="-1" id="offcanvasRight"
         <form id="cadastro" onsubmit="adicionarAluno()">
 
             <label class="form-label" for="nome">Nome:</label>
-            <input class="form-control" type="text" id="name" required placeholder="Digite seu nome"/>
+            <input class="form-control" type="text" id="nome" required placeholder="Digite seu nome"/>
 
             <label class="form-label mt-2" for="email">Email:</label>
             <input class="form-control" type="email" id="email" required placeholder="Digite seu Email"/>
 
             <label class="form-label mt-2" for="telefone">Telefone:</label>
-            <input class="form-control" type="tel" id="telefone" required placeholder="(00)90000-0000"/>
+            <input class="form-control" type="tel" id="telefone" required placeholder="(00)00000-0000"/>
 
             <label class="form-label" for="cidade">Cidade:</label>
             <input class="form-control mt-2" type="text" id="cidade" required placeholder="Digite sua Cidade"/>
@@ -99,7 +100,7 @@ tabindex="-1" id="offcanvasRight"
             <input type="hidden" id="e_id">
 
             <label class="form-label" for="e_nome">Nome:</label>
-            <input class="form-control" type="text" id="e_name" required placeholder="Digite seu nome"/>
+            <input class="form-control" type="text" id="e_nome" required placeholder="Digite seu nome"/>
 
             <label class="form-label mt-2" for="e_email">Email:</label>
             <input class="form-control" type="email" id="e_email" required placeholder="Digite seu Email"/>
@@ -131,7 +132,7 @@ tabindex="-1" id="offcanvasRight"
      <!--JS pessoal-->
     <script src="script.js"></script>
     <script>
-     $("#telefone, #e-telefone").mask("(00)00000-0000");
+     $("#telefone, #e_telefone").mask("(00)00000-0000");
     </script>
 </body>
 </html>

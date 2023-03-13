@@ -50,10 +50,10 @@ function listarAlunos(){
                                     aria-controls="offcanvasRight_editar"
                                     class="btn btn-success"
                                     onclik="preencherForm(${i})">Editar</button>
-                                    <button class="btn btn-danger">Deletar</button>
+                                    <button class="btn btn-danger" onclik="deletarAluno">Deletar</button>
                                </td>
         
-        </tr>`
+                                 </tr>`
     }
 } listarAlunos();//chama uma vez
 
@@ -96,4 +96,15 @@ function editarAluno(){
     document.querySelector(".offcanvas-backdrop").classList.remove("show")
     //3passo- Carregar a Lista
     listarAlunos()//5passo-chama de novo
+}
+function deletarAluno(posicao){
+    let novaLista = [];
+    for(let i = 0; i < lista.length;i++){
+        if(i != posicao){
+            novaLista.push(lista[i]);
+        }
+    }
+    lista = [];
+    lista = novaLista;
+    listarAlunos();
 }
