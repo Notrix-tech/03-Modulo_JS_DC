@@ -27,7 +27,17 @@
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script>
         $('#tabela').DataTable( {
-            ajax: 'https://641b8d989b82ded29d5436ce.mockapi.io/api/v1/alunos'
+            ajax: {
+                url: 'https://641b8d989b82ded29d5436ce.mockapi.io/api/v1/alunos',
+                dataSrc: '',
+            },
+           
+            columns: [
+                { data: 'nome'},
+                { data: 'email'},
+                { data: 'telefone'},
+                { data: 'cidade'},
+            ]
         } );
     </script>
 </body>
