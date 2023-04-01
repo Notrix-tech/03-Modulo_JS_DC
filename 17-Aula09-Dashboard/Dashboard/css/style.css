@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+   font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #dedede;
+}
+
+header{
+   width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+ }
+
+header nav{
+    height: 100vh;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    background-color: #1e96fc;
+    border-radius: 5px;
+    margin-bottom: 16px;
+
+}
+header nav ul li a{
+    padding: 6px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    color: #ffffff;
+}
+
+header nav ul li ion-icon{
+    width: 36px;
+    height: 20px;
+    line-height: 36px;
+    text-align: center;
+    background-color:#ffffff;
+    color: #1e96fc;
+    padding: 10px 2px;
+
+}
+header nav .tema{
+    display: flex;
+    justify-content: center;
+
+}
+header nav .troca{
+    width: 40px;
+    height: 16px;
+    border-radius: 10px;
+    background-color: #dedede;
+    position: relative;
+    margin: 0 16px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+header nav .troca::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 15px;
+    background-color: #999999;
+    position: absolute;
+    top:-4px ;
+    left: 0;
+    transition: all .3s ease;
+}
+header nav .troca.active{
+    background-color: #1e96fc50;
+
+}
+
+header nav .troca.active::after{
+    background-color: #1e96fc;
+    left: calc(100% - 24px);
+   
+}
