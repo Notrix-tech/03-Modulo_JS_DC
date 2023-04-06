@@ -15,10 +15,20 @@ body{
     background-color: #dedede;
 }
 
+
+
 header{
    width: 250px;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #f6f0f0;
+    transition: all .4s ease;
+ }
+ .dark header{
+    background-color: #131314;
+ }
+ header.active{
+    width: 85px;
+
  }
 
 header nav{
@@ -56,6 +66,8 @@ header nav ul li ion-icon{
 header nav .tema{
     display: flex;
     justify-content: center;
+    transition: all 300ms ease;
+    align-items: center;
 
 }
 header nav .troca{
@@ -88,4 +100,42 @@ header nav .troca.active::after{
     background-color: #1e96fc;
     left: calc(100% - 24px);
    
+}
+/*modo dark*/
+.dark header nav ul li a{
+    color: #103c62;
+   
+}
+.dark header nav ul li ion-icon{
+    background-color: #103c62;
+}
+/* encolher o dashboard */
+header nav ul li span{
+    transition: all 300ms ease;
+}
+header.active nav ul li span{
+    display: none;
+}
+header.active nav  .img{
+    display: none;
+}
+/*  */
+header.active nav .tema{
+    flex-direction: column;
+    gap: 16px;
+}
+/* Main */
+main{
+    width: calc(100% - 250px);
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 60px;
+    transition: all 300ms ease;
+
+}
+main.active{
+    width: calc(100% - 85px);
 }
