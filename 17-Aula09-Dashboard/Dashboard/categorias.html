@@ -1,55 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="img">
-                <img src="./img/LogoSystemUp.jpg" width="220px"alt="" srcset="">
-            </div>
-            
+            <div class="logo">LOGO</div>
             <ul>
                 <li>
-                    <a href="index.html"><ion-icon name="home"></ion-icon>
+                    <a href="index.html">
+                        <ion-icon name="home"></ion-icon>
                         <span>Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="categorias.html"><ion-icon name="filing"></ion-icon>
+                    <a href="categorias.html">
+                        <ion-icon name="filing"></ion-icon>
                         <span>Categorias</span>
                     </a>
                 </li>
                 <li>
-                    <a href="produtos.html"><ion-icon name="beer"></ion-icon>
+                    <a href="produtos.html">
+                        <ion-icon name="glasses"></ion-icon>
                         <span>Produtos</span>
                     </a>
                 </li>
             </ul>
             <div class="tema">
                 <ion-icon name="sunny"></ion-icon>
-                <div class="troca">
-                </div>
+                <div class="troca"></div>
                 <ion-icon name="moon"></ion-icon>
             </div>
         </nav>
     </header>
-    <!-- Main -->
+
     <main>
-        <h2>Categorias</h2>
+        <h2>
+            <div class="titulo">
+                <ion-icon class="menu-btn" name="menu"></ion-icon>Categorias
+            </div>
+            <button><span>Nova categoria</span></button>
+        </h2>
+        <div class="box">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Categoria</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Vodkas</td>
+                        <td>Ativo</td>
+                        <td>
+                            <div class="acoes">
+                                <ion-icon name="create"></ion-icon>
+                                <ion-icon name="trash"></ion-icon>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Cachaças</td>
+                        <td>Ativo</td>
+                        <td>
+                            <div class="acoes">
+                                <ion-icon name="create"></ion-icon>
+                                <ion-icon name="trash"></ion-icon>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
-
-
-
-
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        let table = new DataTable('#table');
+    </script>
 </body>
 </html>

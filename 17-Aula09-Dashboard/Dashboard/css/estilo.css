@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #DEDEDE;
+    transition: all 300ms ease;
+}
+body.dark{
+    background-color: #021729;
+}
+
+
+header{
+    width: 250px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    transition: all 300ms ease;
+}
+header.active{
+    width: 85px;
+}
+.dark header{
+    background-color: #103c62;
+}
+
+header nav{
+    height: 100vh;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    background-color: #1e96fc;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+header nav ul li a{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #FFFFFF;
+    transition: all 300ms ease;
+}
+.dark header nav ul li a{
+    color: #103c62;
+}
+
+header nav ul li ion-icon{
+    width: 36px;
+    height: 20px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    color: #1e96fc;
+    padding: 10px 2px;
+    transition: all 300ms ease;
+}
+.dark header nav ul li ion-icon{
+    background-color: #103c62;
+}
+
+header nav ul li span{
+    transition: all 300ms ease;
+}
+header.active nav ul li span{
+    display: none;
+}
+
+header nav .tema{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+}
+header.active nav .tema{
+    flex-direction: column;
+    gap: 16px;
+}
+
+header nav .tema ion-icon{
+    width: 24px;
+    height: 24px;
+}
+
+header nav .troca{
+    width: 40px;
+    height: 16px;
+    border-radius: 10px;
+    background-color: #DEDEDE;
+    position: relative;
+    margin: 0 16px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+header nav .troca::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 15px;
+    background-color: #999999;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    transition: all .3s ease;
+}
+
+header nav .troca.active{
+    background-color: #1e96fc50;
+}
+
+header nav .troca.active::after{
+    background-color: #1e96fc;
+    left: calc(100% - 24px);
+}
+
+main{
+    width: calc(100% - 250px);
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 60px;
+    transition: all 300ms ease;
+}
+main.active{
+    width: calc(100% - 85px);
+}
+
+main h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main h2 .titulo{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+main h2 ion-icon{
+    position: relative;
+    contain: initial;
+}
+
+main h2 ion-icon::after{
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: #00000000;
+    transition-duration: 200ms;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+main h2 ion-icon:hover::after{
+    width: 50px;
+    height: 50px;
+    background-color: #00000030;
+}
+
+main h2 button{
+    line-height: 50px;
+    background-color: #1e96fc;
+    color: #021729;
+    border-radius: 5px;
+    padding: 0 26px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+main h2 button::after{
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #103c62;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition-duration: 200ms;
+}
+
+main h2 button:hover::after{
+    width: 100%;
+}
+
+main h2 button span{
+    position: relative;
+    z-index: 1;
+    transition-duration: 200ms;
+}
+
+main h2 button:hover span{
+    color: #FFFFFF;
+}
+
+main .box{
+    background-color: #FFFFFF;
+    padding: 26px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
