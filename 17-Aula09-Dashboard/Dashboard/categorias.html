@@ -45,7 +45,7 @@
             <div class="titulo">
                 <ion-icon class="menu-btn" name="menu"></ion-icon>Categorias
             </div>
-            <button><span>Nova categoria</span></button>
+            <button id="abrir"><span>Nova categoria</span></button>
         </h2>
         <div class="box">
             <table id="table">
@@ -58,39 +58,34 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Vodkas</td>
-                        <td>Ativo</td>
-                        <td>
-                            <div class="acoes">
-                                <ion-icon name="create"></ion-icon>
-                                <ion-icon name="trash"></ion-icon>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Cachaças</td>
-                        <td>Ativo</td>
-                        <td>
-                            <div class="acoes">
-                                <ion-icon name="create"></ion-icon>
-                                <ion-icon name="trash"></ion-icon>
-                            </div>
-                        </td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </div>
     </main>
+    <aside id="lateral">
+        <div class="conteiner">
+            <form onsubmit="cadastrarCategoria()">
+                <h3>Cadastro <ion-icon name="close"></ion-icon></h3>
+                <label for="categoria">Categoria</label>
+                <input type="text" id="categoria">
+                <label for="status">Status</label>
+                <select name="statu" id="status">
+                   
+                    <option value="1">Ativo</option>
+                    <option value="2">Inativo</option>
+                </select>
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+    </aside>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
-        let table = new DataTable('#table');
-    </script>
+    <script src="js/categorias.js"></script>
+
+    
 </body>
 </html>
